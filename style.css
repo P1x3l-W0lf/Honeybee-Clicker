@@ -1,0 +1,114 @@
+body{
+    background-image: url("honeycomb_bg.png");
+    background-blend-mode: overlay;
+    background-color: rgb(168 122 86 / 0.56);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #492304;
+    font-size: clamp(10px, 5vw, 30px);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#bee {
+    background-image: url("bee.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: clamp(60px, 10vw, 200px);
+    height: clamp(50px, 15vh, 200px);
+    border-color: #b86908;
+    background-color: #ffdc9c;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+div{
+    display: flex;
+}
+
+#right{
+    display: block;
+    width: 66vw;
+    order: 1;
+}
+
+#right h1{
+    background-color: #ffebc5;
+    margin: 1vw 7vw
+}
+
+#score{
+    justify-content: center;
+    background-color: #ffebc5;
+    margin: 1vw 7vw
+}
+
+#num{
+    margin-left: 6px;
+}
+
+#stats{
+    justify-content: center;
+    display: grid;
+    margin: 0 7vw;
+    background-color: #ffebc5;
+}
+
+#clicks {
+    margin-top: -5vh;
+}
+
+#points {
+    margin-top: -5vh;
+}
+
+#p\/s {
+    margin-left: 6px;
+}
+
+#cs {
+    margin-left: 6px;
+}
+
+#left{
+    order: -1;
+    width: 33vw;
+    height: 95vh;
+}
+
+#shop {
+    background: #ffebc5;
+    display: grid;
+    order: -1;
+    width: 33vw;
+    height: 95vh;
+}
+
+#items{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+#shop button{
+    background-color: #ffa741;
+    border-color: #b86908;
+    color: #492304;
+    font-weight: bold;
+    cursor: pointer;
+    width: 20vw;
+    height: clamp(60px, 11vh, 120px);
+    font-size: 2vw;
+    align-self: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+#shop button:hover{
+    background-color: #fbbc60;
+    border-color: #e88f1c;
+}
+
+#leader-board{
+
+}

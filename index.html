@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honeybee Clicker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+<div id="right">
+    <h1>Honeybee Clicker</h1>
+
+    <button id="bee" onclick="clicked()"></button>
+
+    <div id="score">
+        <h3>Points: </h3>
+        <h3 id="num">0</h3>
+    </div>
+
+
+    <div id="stats">
+        <h3>~•Stats•~</h3>
+        <div id="points">
+            <h5>Points/sec: </h5>
+            <h5 id="p/s">0</h5>
+        </div>
+        <div id="clicks">
+            <h5>Click strength: </h5>
+            <h5 id="cs">1</h5>
+        </div>
+    </div>
+</div>
+
+<div id="left">
+    <div id="shop">
+        <h3>~•Shop•~</h3>
+        <div id="items">
+            <button onclick="buy('auto_clicker', 50)">Auto Clicker: <span id="autoPrice">50</span> points</button>
+            <button onclick="buy('strength', 100)">Click Strength: <span id="strengthPrice">100</span> points</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
