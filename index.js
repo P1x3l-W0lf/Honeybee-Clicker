@@ -14,18 +14,18 @@ function buy(item, price){
         switch(item){
             case "auto_clicker":
                 auto_click++;
-                score -= price**auto_click;
+                score -= price*auto_click;
                 document.getElementById("p/s").innerText = auto_click.toString();
-                document.getElementById("autoPrice").innerText = (price**(auto_click++)).toString();
+                document.getElementById("autoPrice").innerText = (price*(auto_click++)).toString();
                 if (!window.autoClickStarted){
                     startAutoClicker()
                 }
                 break;
             case "strength":
-                score -= price**click_strength;
+                score -= price*click_strength;
                 click_strength++;
                 document.getElementById("cs").innerText = click_strength.toString();
-                document.getElementById("strengthPrice").innerText = (price**click_strength).toString();
+                document.getElementById("strengthPrice").innerText = (price*click_strength).toString();
                 break;
         }
         document.getElementById("num").innerText = score;
